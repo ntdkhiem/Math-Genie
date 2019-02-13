@@ -29,8 +29,10 @@ python -m pip install -r requirements.txt
 You need to create a wolfram app id (the core of the program to work)
 1. Create a wolfram alpha account or sign in [here](https://account.wolfram.com/auth/sign-in)
 1. Create an App Id [here](http://developer.wolframalpha.com/portal/myapps/index.html) (only when you signed in)
-    1. Click `Get an AppID` on top right and enter your Application Name and Description (can be anything) 
+    1. Click `Get an AppID` and enter your Application Name and Description
+    ![screenshot-1](https://user-images.githubusercontent.com/25674728/52746101-c6584780-2fae-11e9-86ac-55644280857f.png)
     1. Copy the APPID and paste to `WOLFRAM_APP_ID` in config.ini
+    ![screenshot-3](https://user-images.githubusercontent.com/25674728/52746130-d07a4600-2fae-11e9-83e6-ed0c9a668f83.png)
 #### Generate The Slack Api Token
 Because the program will run on Slack so you need to get slack api token to able to communicate. 
 ##### What is Slack ? :pencil:  
@@ -38,19 +40,18 @@ Because the program will run on Slack so you need to get slack api token to able
 1. Go to [api.slack.com](https://api.slack.com)
 1. Create a new Slack Applications or use your old Slack App (this project only add one slash command to your bot).
 1. Copy __Vertification Token__ and paste to `SLACK_VERTIFICATION_TOKEN` in config.ini
+    ![screenshot-4](https://user-images.githubusercontent.com/25674728/52746136-d4a66380-2fae-11e9-8317-7b03eade40ce.png)
 1. Go to __Slash Commands__
     1. Click __Create New Command__ and fill out the form then save.
-      ```markdown
-      i.e: 
-        __Command__: /genie
-        __Request Url__: https://yourdomain.com/genie
-        __Short Description__: Math Genie will solve every of your math problems
-        __Usage Hint__: what is 1+1?
-      ```
+      ![screenshot-7](https://user-images.githubusercontent.com/25674728/52746825-74b0bc80-2fb0-11e9-90dd-10ae73ace4c5.png)
 1. Go to __OAuth & Permissions__
     1. Select `Send messages as [app's name]` under __Scopes__ and click __Save Changes__
+    
+    ![screenshot-5](https://user-images.githubusercontent.com/25674728/52746154-d96b1780-2fae-11e9-83f6-40d34784b7c7.png)
     1. Click __Install App to Workspace__ on the very top of the page and authorize your app to communicate with your slack's workspace.
-    1. When successfully authorized, it will redirected back to your app page. Copy __OAuth Access Token__ and paste to `SLACK_BOT_TOKEN` in config.ini
+    1. When successfully authorized, it will redirected back to your app page. Copy __OAuth Access Token__ and paste to `SLACK_BOT_TOKEN` in config.ini.
+    
+    ![screenshot-6](https://user-images.githubusercontent.com/25674728/52746158-db34db00-2fae-11e9-933a-f5d08272e0bc.png)
   
 ## Usage :plate_with_cutlery:
 
