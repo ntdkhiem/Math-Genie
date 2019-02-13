@@ -92,3 +92,25 @@ $ python main.py --development
  * Debugger PIN: 232-100-363
  * Running on http://127.0.0.1:3000/ (Press CTRL+C to quit)
 ```
+
+## Notice :exclamation:
+since slack's app doesn't allow slash commands to use local url like `http://127.0.0.1:3000` as __Request Url__ please use [ngrok](https://ngrok.com/) to generate public url.
+#### Example Usage
+```
+$ ngrok http 5000
+ngrok by @inconshreveable                                                                               (Ctrl+C to quit)
+
+Session Status                online
+Account                       TopKeingt (Plan: Free)
+Version                       2.2.8
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://30081a1a.ngrok.io -> localhost:3000
+Forwarding                    https://30081a1a.ngrok.io -> localhost:3000
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                              0       0       0.00    0.00    0.00    0.00
+```
+and use `http://[ngrok's id].ngrok.io` as __Request Url__
+
+## Pull requests are welcome :mag_right:
