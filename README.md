@@ -1,22 +1,26 @@
-# Math Genie
+# Math Genie :octocat: 
 Simple [slack](https://slack.com) slash command for solving math problems
 
-### Features
+## Features :fire:
+
 * Based on [Wolfram|Alpha APIs](http://products.wolframalpha.com/api/)
 * Simple to use
 * Python3 support
 * Can reply to any __math problems__
 
-### Installation
+## Installation :wrench:
+
 ```git
 git clone https://github.com/TopKeingt/Math-Genie
 ```
 or click [here](https://github.com/TopKeingt/Math-Genie/archive/master.zip) to download respository's zip file.
 
-### Requirements 
+## Requirements :hammer_and_pick:
+
 * [Python 3.x](https://www.python.org/downloads/)
 
-### Preparation
+## Preparation :hammer:
+
 #### Generate The Wolfram App Id
 You need to create a wolfram app id (the core of the program to work)
 1. Create a wolfram alpha account or sign in [here](https://account.wolfram.com/auth/sign-in)
@@ -25,7 +29,7 @@ You need to create a wolfram app id (the core of the program to work)
   1. Copy the APPID and paste to `WOLFRAM_APP_ID` in config.ini
 #### Generate The Slack Api Token
 Because the program will run on Slack so you need to get slack api token to able to communicate. 
-##### What is Slack ?
+##### What is Slack ? :pencil:  
 > Slack is a collaboration hub for work, no matter what work you do. It’s a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.
 1. Go to [api.slack.com](https://api.slack.com)
 1. Create a new Slack Applications or use your old Slack App (this project only add one slash command to your bot).
@@ -35,5 +39,7 @@ Because the program will run on Slack so you need to get slack api token to able
   1. Click __Install App to Workspace__ on the very top of the page and authorize your app to communicate with your slack's workspace.
   1. When successfully authorized, it will redirected back to your app page. Copy __OAuth Access Token__ and paste to `SLACK_BOT_TOKEN` in config.ini
   
-### Usage
+## Usage :plate_with_cutlery:
+
 Now you will able to run the program with python
+###### :exclamation: Any missing value in config.ini will break the program. Please follow the instruction above to fill out the configuration.
