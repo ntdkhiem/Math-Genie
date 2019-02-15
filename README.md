@@ -23,7 +23,7 @@ python -m pip install -r requirements.txt
 ```
 
 
-## Preparation :hammer:
+## Prerequisite :hammer:
 
 #### Generate The Wolfram App Id
 You need to create a wolfram app id (the core of the program to work)
