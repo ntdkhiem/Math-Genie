@@ -58,20 +58,7 @@ Because the program will run on Slack so you need to get slack api token to able
 Now you will able to run the program with python
 ###### :exclamation: Any missing value in config.ini will break the program. Please follow the instruction above to fill out the configuration.
 The example of what *config.ini* should look like:
-```
-[DEFAULT]
-SLACK_VERIFICATION_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxx
-SLACK_BOT_TOKEN=xxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-WOLFRAM_APP_ID=xxxxxx-xxxxxxxxxx
-FLASK_PORT=3000
-FLASK_DEBUG=False
-
-[DEVELOPMENT]
-FLASK_DEBUG=True
-
-[PRODUCTION]
-FLASK_DEBUG=False
-```
+![code](https://user-images.githubusercontent.com/25674728/53217629-ba136080-3626-11e9-8d12-add96ee972f1.png)
 How to run ?
 ```
 $ python main.py --help
