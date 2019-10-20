@@ -1,8 +1,8 @@
 import requests
-from urllib.parse import urlencode
 import os
 import argparse
 import configparser
+from urllib.parse import urlencode
 from flask import Flask, request
 from slackclient import SlackClient
 
@@ -23,9 +23,9 @@ if (args.production):
 MODE = config[mode]
 PORT = MODE.getint('FLASK_PORT', 3000)
 DEBUG_MODE = MODE.getboolean('FLASK_DEBUG', True)
-SLACK_BOT_TOKEN = MODE.get('SLACK_BOT_TOKEN', 'XXXX')
-SLACK_VERIFICATION_TOKEN = MODE.get('SLACK_VERIFICATION_TOKEN', 'XXXX')
-WOLFRAM_APP_ID = MODE.get('WOLFRAM_APP_ID', 'XXXX')
+SLACK_BOT_TOKEN = MODE.get('SLACK_BOT_TOKEN', ValueError('Please provide a slack_bot_token in config.ini'))
+SLACK_VERIFICATION_TOKEN = MODE.get('SLACK_VERIFICATION_TOKEN', ValueError('Please provide a slack_verification_token in config.ini'))
+WOLFRAM_APP_ID = MODE.get('WOLFRAM_APP_ID', ValueError('Please provide a wolfram_app_id in config.ini'))
 
 CLIENT = SlackClient(SLACK_BOT_TOKEN)
 app = Flask(__name__)
